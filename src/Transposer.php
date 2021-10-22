@@ -14,7 +14,7 @@ class Transposer
     private const SWAP_SCOPE = ['row' => 'col', 'col' => 'row'];
     private const TABLE_CELL = ['td', 'th'];
 
-    public function transpose(?string $htmlTable): string
+    public function transpose(?string $htmlTable): ?string
     {
         $htmlOutput  = null;
         $reportError = null;
@@ -34,7 +34,7 @@ class Transposer
             }
         }
 
-        return $htmlOutput;
+        return $htmlOutput ?? $reportError;
     }
 
     // TODO colgroup
