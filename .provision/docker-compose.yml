@@ -3,6 +3,7 @@ services:
     php:
         build:
             context: .
+        image: php7.4/table-transpose
         volumes:
             - ./..:/var/www
         extra_hosts:
