@@ -1,7 +1,9 @@
+DEFAULT_CONTAINER=php
 DOCKER_COMPOSE_DIR=./.provision
 DOCKER_COMPOSE_YML=$(DOCKER_COMPOSE_DIR)/docker-compose.yml
-DEFAULT_CONTAINER=php
-DOCKER_COMPOSE=docker-compose -f $(DOCKER_COMPOSE_YML)
+MKFILE_PATH=$(abspath $(lastword $(MAKEFILE_LIST)))
+CURRENT_DIR=$(notdir $(patsubst %/,%,$(dir $(MKFILE_PATH))))
+DOCKER_COMPOSE=COMPOSE_PROJECT_NAME=$(CURRENT_DIR) docker-compose -f $(DOCKER_COMPOSE_YML)
 MAKE=make -s
 .DEFAULT_GOAL := help
 
