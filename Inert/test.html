@@ -1,0 +1,1357 @@
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead><tr>
+            <th scope="row" colspan="2">0</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+            <th scope="col">4</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                <th scope="row" colspan="2"><span class="leitwort">A0</span></th>
+                <td>A2</td>
+                <td>A3</td>
+                <td>A4</td>
+            </tr>
+            <tr><th colspan="5">Inter TH1</th></tr>
+            <tr>
+                <th scope="row" rowspan="4">B0</th>
+                <th scope="row" style="background-color: aquamarine">C1</th>
+                <td style="background-color: aquamarine">C2</td>
+                <td style="background-color: aquamarine">C3</td>
+                <td style="background-color: aquamarine">C4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: darksalmon">D1</th>
+                <td style="background-color: darksalmon">D2</td>
+                <td style="background-color: darksalmon">D3</td>
+                <td style="background-color: darksalmon">D4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: mediumpurple">E1</th>
+                <td style="background-color: mediumpurple">E2</td>
+                <td style="background-color: mediumpurple">E3</td>
+                <td style="background-color: mediumpurple">E4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: mediumspringgreen">F1</th>
+                <td style="background-color: mediumspringgreen">F2</td>
+                <td style="background-color: mediumspringgreen">F3</td>
+                <td style="background-color: mediumspringgreen">F4</td>
+            </tr>
+            <tr><th colspan="5">Inter TH2</th></tr>
+            <tr>
+                <th scope="row" colspan="2">G0</th>
+                <td>G2</td>
+                <td>G3</td>
+                <td>G4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" scope="row">0</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" scope="row"><span class="leitwort">A0</span></th>
+                <td>A2</td>
+                <td>A3</td>
+                <td>A4</td>
+            </tr>
+            <tr>
+                <th colspan="5">Inter TH1</th>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="4" scope="row">B0</th>
+                <th scope="row" style="background-color: aquamarine">C1</th>
+                <td style="background-color: aquamarine">C2</td>
+                <td style="background-color: aquamarine">C3</td>
+                <td style="background-color: aquamarine">C4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: darksalmon">D1</th>
+                <td style="background-color: darksalmon">D2</td>
+                <td style="background-color: darksalmon">D3</td>
+                <td style="background-color: darksalmon">D4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: mediumpurple">E1</th>
+                <td style="background-color: mediumpurple">E2</td>
+                <td style="background-color: mediumpurple">E3</td>
+                <td style="background-color: mediumpurple">E4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: mediumspringgreen">F1</th>
+                <td style="background-color: mediumspringgreen">F2</td>
+                <td style="background-color: mediumspringgreen">F3</td>
+                <td style="background-color: mediumspringgreen">F4</td>
+            </tr>
+            <tr>
+                <th colspan="5">Inter TH2</th>
+            </tr>
+            <tr>
+                <th colspan="2" scope="row">G0</th>
+                <td>G2</td>
+                <td>G3</td>
+                <td>G4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <table><tbody>
+        <tr>
+            <th scope="col" rowspan="2">0</th>
+            <th scope="col" rowspan="2"><span class="leitwort">A0</span></th>
+            <th rowspan="5">Inter TH1</th>
+            <th scope="col" colspan="4">B0</th>
+            <th rowspan="5">Inter TH2</th>
+            <th scope="col" rowspan="2">G0</th>
+        </tr>
+        <tr>
+            <th scope="col" style="background-color: aquamarine">C1</th>
+            <th scope="col" style="background-color: darksalmon">D1</th>
+            <th scope="col" style="background-color: mediumpurple">E1</th>
+            <th scope="col" style="background-color: mediumspringgreen">F1</th>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>A2</td>
+            <td style="background-color: aquamarine">C2</td>
+            <td style="background-color: darksalmon">D2</td>
+            <td style="background-color: mediumpurple">E2</td>
+            <td style="background-color: mediumspringgreen">F2</td>
+            <td>G2</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>A3</td>
+            <td style="background-color: aquamarine">C3</td>
+            <td style="background-color: darksalmon">D3</td>
+            <td style="background-color: mediumpurple">E3</td>
+            <td style="background-color: mediumspringgreen">F3</td>
+            <td>G3</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>A4</td>
+            <td style="background-color: aquamarine">C4</td>
+            <td style="background-color: darksalmon">D4</td>
+            <td style="background-color: mediumpurple">E4</td>
+            <td style="background-color: mediumspringgreen">F4</td>
+            <td>G4</td>
+        </tr>
+    </tbody></table>
+
+    <hr>
+
+    <table><tbody>
+        <tr>
+            <th scope="col" rowspan="2">0</th>
+            <th scope="col" rowspan="2"><span class="leitwort">A0</span></th>
+            <th rowspan="5">Inter TH1</th>
+            <th scope="col" colspan="4">B0</th>
+            <th rowspan="5">Inter TH2</th>
+            <th scope="col" rowspan="2">G0</th>
+        </tr>
+        <tr>
+            <th scope="col" style="background-color: aquamarine">C1</th>
+            <th scope="col" style="background-color: darksalmon">D1</th>
+            <th scope="col" style="background-color: mediumpurple">E1</th>
+            <th scope="col" style="background-color: mediumspringgreen">F1</th>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>A2</td>
+            <td style="background-color: aquamarine">C2</td>
+            <td style="background-color: darksalmon">D2</td>
+            <td style="background-color: mediumpurple">E2</td>
+            <td style="background-color: mediumspringgreen">F2</td>
+            <td>G2</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>A3</td>
+            <td style="background-color: aquamarine">C3</td>
+            <td style="background-color: darksalmon">D3</td>
+            <td style="background-color: mediumpurple">E3</td>
+            <td style="background-color: mediumspringgreen">F3</td>
+            <td>G3</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>A4</td>
+            <td style="background-color: aquamarine">C4</td>
+            <td style="background-color: darksalmon">D4</td>
+            <td style="background-color: mediumpurple">E4</td>
+            <td style="background-color: mediumspringgreen">F4</td>
+            <td>G4</td>
+        </tr>
+    </tbody></table>
+
+    <hr>
+
+    <table>
+        <tr><td>1·1</td><td>1·2</td><td>1·3</td></tr>
+        <tr><td colspan="2" rowspan="2">2·1 - 3·2</td><td>2·3</td></tr>
+        <tr><td>3·3</td></tr>
+        <tr><td>4·1</td><td>4·2</td><td>4·3</td></tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>1·1</td>
+            <td rowspan="2" colspan="2">2·1 - 3·2</td>
+            <td>4·1</td>
+        </tr>
+        <tr>
+            <td>1·2</td>
+            <td>4·2</td>
+        </tr>
+        <tr>
+            <td>1·3</td>
+            <td>2·3</td>
+            <td>3·3</td>
+            <td>4·3</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <table>
+        <tr><td>1·1</td><td>1·2</td><td>1·3</td></tr>
+        <tr><td colspan="2">2·1 - 2·2</td><td rowspan="2">2·3 - 3·3</td></tr>
+        <tr><td>3·1</td><td rowspan="2">3·2 - 4·2</td></tr>
+        <tr><td>4·1</td><td>4·3</td></tr>
+    </table>
+
+    <br />
+    <table>
+        <tr>
+            <td>1·1</td>
+            <td rowspan="2">2·1 - 2·2</td>
+            <td>3·1</td>
+            <td>4·1</td>
+        </tr>
+        <tr>
+            <td>1·2</td>
+            <td colspan="2">3·2 - 4·2</td>
+        </tr>
+        <tr>
+            <td>1·3</td>
+            <td colspan="2">2·3 - 3·3</td>
+            <td>4·3</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="row"><span class="leitwort">Part</span></th>
+                <th scope="col"><span class="leitwort">Characteristics</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><span class="leitwort">Crown</span></th>
+                <td>
+                    <ul>
+                        <li>Covered by enamel</li>
+                        <li>Projects above the gingiva (gums)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><span class="leitwort">Neck</span></th>
+                <td>
+                    <ul>
+                        <li>Located between the crown and the root</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><span class="leitwort">Root</span></th>
+                <td>
+                    <ul>
+                        <li>Located in the alveolar surface of the mandible and/or maxilla</li>
+                        <li>Connected to the bone by the periodontal ligament (a type of modified periosteal layer)</li>
+                        <li>Covered with cementum</li>
+                        <li>Mandibular molars have <span class="nowrap">2 roots</span>.</li>
+                        <li>Maxillary molars have <span class="nowrap">3 roots</span>.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead></thead>
+        <tbody></tbody>
+        <tr>
+            <th scope="col"><span class="leitwort">Part</span></th>
+            <th scope="col"><span class="leitwort">Crown</span></th>
+            <th scope="col"><span class="leitwort">Neck</span></th>
+            <th scope="col"><span class="leitwort">Root</span></th>
+        </tr>
+        <tr>
+            <th scope="row"><span class="leitwort">Characteristics</span></th>
+            <td>
+                <ul>
+                    <li>Covered by enamel</li>
+                    <li>Projects above the gingiva (gums)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Located between the crown and the root</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Located in the alveolar surface of the mandible and/or maxilla</li>
+                    <li>Connected to the bone by the periodontal ligament (a type of modified periosteal layer)</li>
+                    <li>Covered with cementum</li>
+                    <li>Mandibular molars have <span class="nowrap">2 roots</span>.</li>
+                    <li>Maxillary molars have <span class="nowrap">3 roots</span>.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" scope="row">0</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" scope="row"><span class="leitwort">A0</span></th>
+                <td>A2</td>
+                <td>A3</td>
+                <td>A4</td>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="4" scope="row">B0</th>
+                <th scope="row" style="background-color: aquamarine">C1</th>
+                <td style="background-color: aquamarine">C2</td>
+                <td style="background-color: aquamarine">C3</td>
+                <td style="background-color: aquamarine">C4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: darksalmon">D1</th>
+                <td style="background-color: darksalmon">D2</td>
+                <td style="background-color: darksalmon">D3</td>
+                <td style="background-color: darksalmon">D4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: mediumpurple">E1</th>
+                <td style="background-color: mediumpurple">E2</td>
+                <td style="background-color: mediumpurple">E3</td>
+                <td style="background-color: mediumpurple">E4</td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: mediumspringgreen">F1</th>
+                <td style="background-color: mediumspringgreen">F2</td>
+                <td style="background-color: mediumspringgreen">F3</td>
+                <td style="background-color: mediumspringgreen">F4</td>
+            </tr>
+            <tr>
+                <th colspan="2" scope="row">G0</th>
+                <td>G2</td>
+                <td>G3</td>
+                <td>G4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead></thead>
+        <tbody></tbody>
+        <tr>
+            <th scope="col" rowspan="2">0</th>
+            <th scope="col" rowspan="2"><span class="leitwort">A0</span></th>
+            <th scope="col" colspan="4">B0</th>
+            <th scope="col" rowspan="2">G0</th>
+        </tr>
+        <tr>
+            <th scope="col" style="background-color: aquamarine">C1</th>
+            <th scope="col" style="background-color: darksalmon">D1</th>
+            <th scope="col" style="background-color: mediumpurple">E1</th>
+            <th scope="col" style="background-color: mediumspringgreen">F1</th>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>A2</td>
+            <td style="background-color: aquamarine">C2</td>
+            <td style="background-color: darksalmon">D2</td>
+            <td style="background-color: mediumpurple">E2</td>
+            <td style="background-color: mediumspringgreen">F2</td>
+            <td>G2</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>A3</td>
+            <td style="background-color: aquamarine">C3</td>
+            <td style="background-color: darksalmon">D3</td>
+            <td style="background-color: mediumpurple">E3</td>
+            <td style="background-color: mediumspringgreen">F3</td>
+            <td>G3</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>A4</td>
+            <td style="background-color: aquamarine">C4</td>
+            <td style="background-color: darksalmon">D4</td>
+            <td style="background-color: mediumpurple">E4</td>
+            <td style="background-color: mediumspringgreen">F4</td>
+            <td>G4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" scope="row"></th>
+                <th scope="col"><span class="linksuggest"><span class="leitwort">Dilated cardiomyopathy</span></span></th>
+                <th scope="col">
+                    <p><span class="linksuggest"><span class="leitwort">Hypertrophic cardiomyopathy</span></span></p>
+                </th>
+                <th scope="col"><span class="linksuggest"><span class="leitwort">Restrictive cardiomyopathy</span></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" scope="row"><span class="leitwort">Etiology</span></th>
+                <td>
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1">Mostly idiopathic</span></span></li>
+                        <li><span class="highlight-step1"><span class="highlight">Genetic predisposition</span> (<span class="nowrap">TTN gene</span> mutation)</span></li>
+                        <li><span class="highlight-step1">Ischemic heart disease</span></li>
+                        <li>Infectious diseases
+                            <ul>
+                                <li><span class="nowrap"><span class="highlight"><span class="highlight-step1">Coxsackie B virus</span></span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Chagas disease</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">HIV</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Systemic disorders
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Sarcoidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Hemochromatosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Thiamine deficiency (<span class="nowrap">wet beriberi</span>)</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Toxic substances
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Cocaine</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Alcohol</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Medication (e.g., <span class="highlight">doxorubicin)</span></span></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="highlight"><span class="highlight-step1">Peripartum cardiomyopathy</span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight">Inherited</span> (autosomal dominant) mutation of:</span>
+                            <ul>
+                                <li><span class="highlight-step1">Myosin binding <span class="nowrap">protein C</span></span></li>
+                                <li><span class="highlight-step1"><span class="nowrap">β-Myosin</span> heavy chain</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1">Mostly idiopathic</span></li>
+                        <li>Systemic disorders
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Amyloidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Sarcoidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Hemochromatosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Systemic sclerosis</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Heart disease
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Loffler endocarditis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Endocardial fibroelastosis</span></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="highlight"><span class="highlight-step1">Post-radiation fibrosis</span></span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" scope="row">
+                    <p><span class="leitwort">Pathophysiology</span></p>
+                </th>
+                <td>
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Eccentric hypertrophy</span> of the left ventricle → <span class="nowrap">↓ ventricular contractility</span> → <span class="nowrap">↓ LVEF</span></span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Concentric hypertrophy</span> of the left ventricle (including the interventricular <span class="nowrap">septum) </span></span></span><span class="highlight-step1"><span class="highlight"><span class="nowrap">→</span> <span class="wichtig"><span class="nowrap">↓ ventricular</span> <span class="nowrap">relaxation</span></span><span class="nowrap"> →</span> <span class="nowrap">↓ diastolic</span> filling</span></span> and systolic <span class="nowrap">output →</span> <span class="nowrap">↓ myocardial</span> and peripheral perfusion</li>
+                        <li><span class="highlight"><span class="highlight-step1">Obstructive type (HOCM): left ventricular outflow tract (<span class="wichtig">LVOT</span>) <span class="wichtig">obstruction</span> and mitral regurgitation due to systolic anterior movement (<span class="wichtig">SAM</span>) of the mitral valve</span></span> <span class="erklaerung">Interventricular septum hypertrophy in combination with mitral valve leaflet displacement towards the interventricular septum can cause severe subaortic obstruction.</span> <span class="highlight"><span class="highlight-step1"> <span class="erklaerung"><img src="/lyMediaAsset/get/11034" title="Hypertrophic cardiomyopathy" /></span></span></span> [#13430]</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight">Proliferation of connective <span class="nowrap">tissue →</span></span></span>
+                            <ul>
+                                <li><span class="highlight-step1"><span class="wichtig"><span class="nowrap">↓ Elasticity of cardiac tissue</span></span></span></li>
+                                <li>Atrial enlargement and <span class="highlight-step1"><span class="highlight">severe diastolic dysfunction</span></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" scope="row"><span class="leitwort">Distinctive clinical features</span></th>
+                <td>
+                    <ul>
+                        <li>Signs of <span class="linksuggest">left heart failure</span> and <span class="linksuggest">right heart failure</span></li>
+                        <li><span class="highlight"><span class="highlight-step1">S3 gallop</span></span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Systolic murmur</span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Frequently asymptomatic</li>
+                        <li>Signs of left heart failure (<span class="highlight-step1">dyspnea, <span class="wichtig"><span class="highlight">syncope</span></span></span>, dizziness)</li>
+                        <li>Arrhythmias</li>
+                        <li><span class="highlight-step1"><span class="highlight">S4 gallop</span></span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Possible holosystolic murmur from mitral regurgitation</span></span></li>
+                        <li><span class="wichtig"><span class="highlight-step1"><span class="highlight">Sudden death</span></span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Signs of <span class="linksuggest">left heart failure</span> and <span class="linksuggest">right heart failure</span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="4" scope="row"><span class="leitwort">Echocardiography</span></th>
+                <th scope="row" style="background-color: aquamarine"><span class="leitwort">LV cavity size</span></th>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Significantly increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Decreased</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: darksalmon"><span class="leitwort">EF</span></th>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Significantly decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Normal</li>
+                    </ul>
+                </td>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Normal or increased</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: mediumpurple"><span class="leitwort">Wall thickness</span></th>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Normal or decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Significantly increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Usually increased</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: mediumspringgreen"><span class="leitwort">Additional findings</span></th>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Left ventricular</span> (and atrial) <span class="wichtig">dilation</span></span></span></li>
+                        <li><span class="highlight">Wall movement abnormalities</span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Systolic dysfunction</span></span></li>
+                        <li>Normal diastolic function</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Outflow tract obstruction</span> (SAM, interventricular septum hypertrophy)</span></span></li>
+                        <li><span>Reduced diastolic filling</span></li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Dilated atria</span></span></span>, nondilated ventricles</li>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Reduced</span> diastolic <span class="wichtig">filling</span></span></span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" scope="row"><span class="leitwort">Other characteristics</span></th>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Most common </span>cardiomyopathy</span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight">Second most common cardiomyopathy</span></span></li>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig"><span class="highlight-step1">Most</span> common</span> cause of sudden heart failure <span class="wichtig">in athletes</span> and teenagers</span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Poor prognosis without heart transplant</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+
+    <table>
+        <thead></thead>
+        <tbody></tbody>
+        <tr>
+            <th scope="col" rowspan="2"></th>
+            <th scope="col" rowspan="2"><span class="leitwort">Etiology</span></th>
+            <th scope="col" rowspan="2">
+                <p><span class="leitwort">Pathophysiology</span></p>
+            </th>
+            <th scope="col" rowspan="2"><span class="leitwort">Distinctive clinical features</span></th>
+            <th scope="col" colspan="4"><span class="leitwort">Echocardiography</span></th>
+            <th scope="col" rowspan="2"><span class="leitwort">Other characteristics</span></th>
+        </tr>
+        <tr>
+            <th scope="col" style="background-color: aquamarine"><span class="leitwort">LV cavity size</span></th>
+            <th scope="col" style="background-color: darksalmon"><span class="leitwort">EF</span></th>
+            <th scope="col" style="background-color: mediumpurple"><span class="leitwort">Wall thickness</span></th>
+            <th scope="col" style="background-color: mediumspringgreen"><span class="leitwort">Additional findings</span></th>
+        </tr>
+        <tr>
+            <th scope="row"><span class="linksuggest"><span class="leitwort">Dilated cardiomyopathy</span></span></th>
+            <td>
+                <ul>
+                    <li><span class="highlight"><span class="highlight-step1">Mostly idiopathic</span></span></li>
+                    <li><span class="highlight-step1"><span class="highlight">Genetic predisposition</span> (<span class="nowrap">TTN gene</span> mutation)</span></li>
+                    <li><span class="highlight-step1">Ischemic heart disease</span></li>
+                    <li>Infectious diseases
+                        <ul>
+                            <li><span class="nowrap"><span class="highlight"><span class="highlight-step1">Coxsackie B virus</span></span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Chagas disease</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">HIV</span></span></li>
+                        </ul>
+                    </li>
+                    <li>Systemic disorders
+                        <ul>
+                            <li><span class="highlight"><span class="highlight-step1">Sarcoidosis</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Hemochromatosis</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Thiamine deficiency (<span class="nowrap">wet beriberi</span>)</span></span></li>
+                        </ul>
+                    </li>
+                    <li>Toxic substances
+                        <ul>
+                            <li><span class="highlight"><span class="highlight-step1">Cocaine</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Alcohol</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Medication (e.g., <span class="highlight">doxorubicin)</span></span></span></li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight"><span class="highlight-step1">Peripartum cardiomyopathy</span></span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Eccentric hypertrophy</span> of the left ventricle → <span class="nowrap">↓ ventricular contractility</span> → <span class="nowrap">↓ LVEF</span></span></span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Signs of <span class="linksuggest">left heart failure</span> and <span class="linksuggest">right heart failure</span>
+                    </li>
+                    <li><span class="highlight"><span class="highlight-step1">S3 gallop</span></span></li>
+                    <li><span class="highlight"><span class="highlight-step1">Systolic murmur</span></span></li>
+                </ul>
+            </td>
+            <td style="background-color: aquamarine">
+                <ul>
+                    <li>Significantly increased</li>
+                </ul>
+            </td>
+            <td style="background-color: darksalmon">
+                <ul>
+                    <li>Significantly decreased</li>
+                </ul>
+            </td>
+            <td style="background-color: mediumpurple">
+                <ul>
+                    <li>Normal or decreased</li>
+                </ul>
+            </td>
+            <td style="background-color: mediumspringgreen">
+                <ul>
+                    <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Left ventricular</span> (and atrial) <span class="wichtig">dilation</span></span></span></li>
+                    <li><span class="highlight">Wall movement abnormalities</span></li>
+                    <li><span class="highlight"><span class="highlight-step1">Systolic dysfunction</span></span></li>
+                    <li>Normal diastolic function</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Most common </span>cardiomyopathy</span></span></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <p><span class="linksuggest"><span class="leitwort">Hypertrophic cardiomyopathy</span></span></p>
+            </th>
+            <td>
+                <ul>
+                    <li>
+                        <span class="highlight-step1"><span class="highlight">Inherited</span> (autosomal dominant) mutation of:</span>
+                        <ul>
+                            <li><span class="highlight-step1">Myosin binding <span class="nowrap">protein C</span></span></li>
+                            <li><span class="highlight-step1"><span class="nowrap">β-Myosin</span> heavy chain</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        <span class="highlight-step1"><span class="highlight"><span class="wichtig">Concentric hypertrophy</span> of the left ventricle (including the interventricular <span class="nowrap">septum) </span></span></span><span class="highlight-step1"><span class="highlight"><span class="nowrap">→</span> <span class="wichtig"><span class="nowrap">↓ ventricular</span> <span class="nowrap">relaxation</span></span><span class="nowrap"> →</span> <span class="nowrap">↓ diastolic</span> filling</span></span> and systolic <span class="nowrap">output →</span> <span class="nowrap">↓ myocardial</span> and peripheral perfusion</li>
+                    <li>
+                        <span class="highlight"><span class="highlight-step1">Obstructive type (HOCM): left ventricular outflow tract (<span class="wichtig">LVOT</span>) <span class="wichtig">obstruction</span> and mitral regurgitation due to systolic anterior movement (<span class="wichtig">SAM</span>) of the mitral valve</span></span> <span class="erklaerung">Interventricular septum hypertrophy in combination with mitral valve leaflet displacement towards the interventricular septum can cause severe subaortic obstruction.</span> <span class="highlight"><span class="highlight-step1"> <span class="erklaerung"><img src="/lyMediaAsset/get/11034" title="Hypertrophic cardiomyopathy"></span></span></span> [#13430]</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Frequently asymptomatic</li>
+                    <li>Signs of left heart failure (<span class="highlight-step1">dyspnea, <span class="wichtig"><span class="highlight">syncope</span></span></span>, dizziness)</li>
+                    <li>Arrhythmias</li>
+                    <li><span class="highlight-step1"><span class="highlight">S4 gallop</span></span></li>
+                    <li><span class="highlight"><span class="highlight-step1">Possible holosystolic murmur from mitral regurgitation</span></span></li>
+                    <li><span class="wichtig"><span class="highlight-step1"><span class="highlight">Sudden death</span></span></span></li>
+                </ul>
+            </td>
+            <td style="background-color: aquamarine">
+                <ul>
+                    <li>Decreased</li>
+                </ul>
+            </td>
+            <td style="background-color: darksalmon">
+                <ul>
+                    <li>Normal</li>
+                </ul>
+            </td>
+            <td style="background-color: mediumpurple">
+                <ul>
+                    <li>Significantly increased</li>
+                </ul>
+            </td>
+            <td style="background-color: mediumspringgreen">
+                <ul>
+                    <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Outflow tract obstruction</span> (SAM, interventricular septum hypertrophy)</span></span></li>
+                    <li><span>Reduced diastolic filling</span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="highlight-step1"><span class="highlight">Second most common cardiomyopathy</span></span></li>
+                    <li><span class="highlight-step1"><span class="highlight"><span class="wichtig"><span class="highlight-step1">Most</span> common</span> cause of sudden heart failure <span class="wichtig">in athletes</span> and teenagers</span></span></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><span class="linksuggest"><span class="leitwort">Restrictive cardiomyopathy</span></span></th>
+            <td>
+                <ul>
+                    <li><span class="highlight-step1">Mostly idiopathic</span></li>
+                    <li>Systemic disorders
+                        <ul>
+                            <li><span class="highlight"><span class="highlight-step1">Amyloidosis</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Sarcoidosis</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Hemochromatosis</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Systemic sclerosis</span></span></li>
+                        </ul>
+                    </li>
+                    <li>Heart disease
+                        <ul>
+                            <li><span class="highlight"><span class="highlight-step1">Loffler endocarditis</span></span></li>
+                            <li><span class="highlight"><span class="highlight-step1">Endocardial fibroelastosis</span></span></li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight"><span class="highlight-step1">Post-radiation fibrosis</span></span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        <span class="highlight-step1"><span class="highlight">Proliferation of connective <span class="nowrap">tissue →</span></span></span>
+                        <ul>
+                            <li><span class="highlight-step1"><span class="wichtig"><span class="nowrap">↓ Elasticity of cardiac tissue</span></span></span></li>
+                            <li>Atrial enlargement and <span class="highlight-step1"><span class="highlight">severe diastolic dysfunction</span></span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Signs of <span class="linksuggest">left heart failure</span> and <span class="linksuggest">right heart failure</span>
+                    </li>
+                </ul>
+            </td>
+            <td style="background-color: aquamarine">
+                <ul>
+                    <li>Decreased</li>
+                </ul>
+            </td>
+            <td style="background-color: darksalmon">
+                <ul>
+                    <li>Normal or increased</li>
+                </ul>
+            </td>
+            <td style="background-color: mediumpurple">
+                <ul>
+                    <li>Usually increased</li>
+                </ul>
+            </td>
+            <td style="background-color: mediumspringgreen">
+                <ul>
+                    <li>
+                        <span class="highlight"><span class="highlight-step1"><span class="wichtig">Dilated atria</span></span></span>, nondilated ventricles</li>
+                    <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Reduced</span> diastolic <span class="wichtig">filling</span></span></span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Poor prognosis without heart transplant</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2"></th>
+                <th scope="col" rowspan="2"><span class="leitwort">Etiology</span></th>
+                <th scope="col" rowspan="2">
+                    <p><span class="leitwort">Pathophysiology</span></p>
+                </th>
+                <th scope="col" rowspan="2"><span class="leitwort">Distinctive clinical features</span></th>
+                <th scope="col" colspan="4"><span class="leitwort">Echocardiography</span></th>
+                <th scope="col" rowspan="2"><span class="leitwort">Other characteristics</span></th>
+            </tr>
+            <tr>
+                <th scope="col" style="background-color: aquamarine"><span class="leitwort">LV cavity size</span></th>
+                <th scope="col" style="background-color: darksalmon"><span class="leitwort">EF</span></th>
+                <th scope="col" style="background-color: mediumpurple"><span class="leitwort">Wall thickness</span></th>
+                <th scope="col" style="background-color: mediumspringgreen"><span class="leitwort">Additional findings</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><span class="linksuggest"><span class="leitwort">Dilated cardiomyopathy</span></span></th>
+                <td>
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1">Mostly idiopathic</span></span></li>
+                        <li><span class="highlight-step1"><span class="highlight">Genetic predisposition</span> (<span class="nowrap">TTN gene</span> mutation)</span></li>
+                        <li><span class="highlight-step1">Ischemic heart disease</span></li>
+                        <li>Infectious diseases
+                            <ul>
+                                <li><span class="nowrap"><span class="highlight"><span class="highlight-step1">Coxsackie B virus</span></span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Chagas disease</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">HIV</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Systemic disorders
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Sarcoidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Hemochromatosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Thiamine deficiency (<span class="nowrap">wet beriberi</span>)</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Toxic substances
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Cocaine</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Alcohol</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Medication (e.g., <span class="highlight">doxorubicin)</span></span></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="highlight"><span class="highlight-step1">Peripartum cardiomyopathy</span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Eccentric hypertrophy</span> of the left ventricle → <span class="nowrap">↓ ventricular contractility</span> → <span class="nowrap">↓ LVEF</span></span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Signs of <span class="linksuggest">left heart failure</span> and <span class="linksuggest">right heart failure</span>
+                        </li>
+                        <li><span class="highlight"><span class="highlight-step1">S3 gallop</span></span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Systolic murmur</span></span></li>
+                    </ul>
+                </td>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Significantly increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Significantly decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Normal or decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Left ventricular</span> (and atrial) <span class="wichtig">dilation</span></span></span></li>
+                        <li><span class="highlight">Wall movement abnormalities</span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Systolic dysfunction</span></span></li>
+                        <li>Normal diastolic function</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Most common </span>cardiomyopathy</span></span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p><span class="linksuggest"><span class="leitwort">Hypertrophic cardiomyopathy</span></span></p>
+                </th>
+                <td>
+                    <ul>
+                        <li>
+                            <span class="highlight-step1"><span class="highlight">Inherited</span> (autosomal dominant) mutation of:</span>
+                            <ul>
+                                <li><span class="highlight-step1">Myosin binding <span class="nowrap">protein C</span></span></li>
+                                <li><span class="highlight-step1"><span class="nowrap">β-Myosin</span> heavy chain</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <span class="highlight-step1"><span class="highlight"><span class="wichtig">Concentric hypertrophy</span> of the left ventricle (including the interventricular <span class="nowrap">septum) </span></span></span><span class="highlight-step1"><span class="highlight"><span class="nowrap">→</span> <span class="wichtig"><span class="nowrap">↓ ventricular</span> <span class="nowrap">relaxation</span></span><span class="nowrap"> →</span> <span class="nowrap">↓ diastolic</span> filling</span></span> and systolic <span class="nowrap">output →</span> <span class="nowrap">↓ myocardial</span> and peripheral perfusion</li>
+                        <li>
+                            <span class="highlight"><span class="highlight-step1">Obstructive type (HOCM): left ventricular outflow tract (<span class="wichtig">LVOT</span>) <span class="wichtig">obstruction</span> and mitral regurgitation due to systolic anterior movement (<span class="wichtig">SAM</span>) of the mitral valve</span></span> <span class="erklaerung">Interventricular septum hypertrophy in combination with mitral valve leaflet displacement towards the interventricular septum can cause severe subaortic obstruction.</span> <span class="highlight"><span class="highlight-step1"> <span class="erklaerung"><img src="/lyMediaAsset/get/11034" title="Hypertrophic cardiomyopathy"></span></span></span> [#13430]</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Frequently asymptomatic</li>
+                        <li>Signs of left heart failure (<span class="highlight-step1">dyspnea, <span class="wichtig"><span class="highlight">syncope</span></span></span>, dizziness)</li>
+                        <li>Arrhythmias</li>
+                        <li><span class="highlight-step1"><span class="highlight">S4 gallop</span></span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Possible holosystolic murmur from mitral regurgitation</span></span></li>
+                        <li><span class="wichtig"><span class="highlight-step1"><span class="highlight">Sudden death</span></span></span></li>
+                    </ul>
+                </td>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Normal</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Significantly increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Outflow tract obstruction</span> (SAM, interventricular septum hypertrophy)</span></span></li>
+                        <li><span>Reduced diastolic filling</span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight">Second most common cardiomyopathy</span></span></li>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig"><span class="highlight-step1">Most</span> common</span> cause of sudden heart failure <span class="wichtig">in athletes</span> and teenagers</span></span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><span class="linksuggest"><span class="leitwort">Restrictive cardiomyopathy</span></span></th>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1">Mostly idiopathic</span></li>
+                        <li>Systemic disorders
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Amyloidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Sarcoidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Hemochromatosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Systemic sclerosis</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Heart disease
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Loffler endocarditis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Endocardial fibroelastosis</span></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="highlight"><span class="highlight-step1">Post-radiation fibrosis</span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <span class="highlight-step1"><span class="highlight">Proliferation of connective <span class="nowrap">tissue →</span></span></span>
+                            <ul>
+                                <li><span class="highlight-step1"><span class="wichtig"><span class="nowrap">↓ Elasticity of cardiac tissue</span></span></span></li>
+                                <li>Atrial enlargement and <span class="highlight-step1"><span class="highlight">severe diastolic dysfunction</span></span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Signs of <span class="linksuggest">left heart failure</span> and <span class="linksuggest">right heart failure</span>
+                        </li>
+                    </ul>
+                </td>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Normal or increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Usually increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li>
+                            <span class="highlight"><span class="highlight-step1"><span class="wichtig">Dilated atria</span></span></span>, nondilated ventricles</li>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Reduced</span> diastolic <span class="wichtig">filling</span></span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Poor prognosis without heart transplant</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+        <!-- *** collected junk nodes *** -->
+    </table>
+
+
+
+
+    <hr>
+    <!-- retroduced -->
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2"></th>
+                <th scope="col" rowspan="2"><span class="leitwort">Etiology</span></th>
+                <th scope="col" rowspan="2">
+                    <p><span class="leitwort">Pathophysiology</span></p>
+                </th>
+                <th scope="col" rowspan="2"><span class="leitwort">Distinctive clinical features</span></th>
+                <th scope="col" colspan="4"><span class="leitwort">Echocardiography</span></th>
+                <th scope="col" rowspan="2"><span class="leitwort">Other characteristics</span></th>
+            </tr>
+            <tr>
+                <th scope="col" style="background-color: aquamarine"><span class="leitwort">LV cavity size</span></th>
+                <th scope="col" style="background-color: darksalmon"><span class="leitwort">EF</span></th>
+                <th scope="col" style="background-color: mediumpurple"><span class="leitwort">Wall thickness</span></th>
+                <th scope="col" style="background-color: mediumspringgreen"><span class="leitwort">Additional findings</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><span class="linksuggest"><span class="leitwort">Dilated cardiomyopathy</span></span></th>
+                <td>
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1">Mostly idiopathic</span></span></li>
+                        <li><span class="highlight-step1"><span class="highlight">Genetic predisposition</span> (<span class="nowrap">TTN gene</span> mutation)</span></li>
+                        <li><span class="highlight-step1">Ischemic heart disease</span></li>
+                        <li>Infectious diseases
+                            <ul>
+                                <li><span class="nowrap"><span class="highlight"><span class="highlight-step1">Coxsackie B virus</span></span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Chagas disease</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">HIV</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Systemic disorders
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Sarcoidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Hemochromatosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Thiamine deficiency (<span class="nowrap">wet beriberi</span>)</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Toxic substances
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Cocaine</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Alcohol</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Medication (e.g., <span class="highlight">doxorubicin)</span></span></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="highlight"><span class="highlight-step1">Peripartum cardiomyopathy</span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Eccentric hypertrophy</span> of the left ventricle → <span class="nowrap">↓ ventricular contractility</span> → <span class="nowrap">↓ LVEF</span></span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Signs of <span class="linksuggest">left heart failure</span> and <span class="linksuggest">right heart failure</span>
+                        </li>
+                        <li><span class="highlight"><span class="highlight-step1">S3 gallop</span></span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Systolic murmur</span></span></li>
+                    </ul>
+                </td>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Significantly increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Significantly decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Normal or decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li><span class="highlight"><span class="highlight-step1"><span class="wichtig">Left ventricular</span> (and atrial) <span class="wichtig">dilation</span></span></span></li>
+                        <li><span class="highlight">Wall movement abnormalities</span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Systolic dysfunction</span></span></li>
+                        <li>Normal diastolic function</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Most common </span>cardiomyopathy</span></span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p><span class="linksuggest"><span class="leitwort">Hypertrophic cardiomyopathy</span></span></p>
+                </th>
+                <td>
+                    <ul>
+                        <li>
+                            <span class="highlight-step1"><span class="highlight">Inherited</span> (autosomal dominant) mutation of:</span>
+                            <ul>
+                                <li><span class="highlight-step1">Myosin binding <span class="nowrap">protein C</span></span></li>
+                                <li><span class="highlight-step1"><span class="nowrap">β-Myosin</span> heavy chain</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <span class="highlight-step1"><span class="highlight"><span class="wichtig">Concentric hypertrophy</span> of the left ventricle (including the interventricular <span class="nowrap">septum) </span></span></span><span class="highlight-step1"><span class="highlight"><span class="nowrap">→</span> <span class="wichtig"><span class="nowrap">↓ ventricular</span> <span class="nowrap">relaxation</span></span><span class="nowrap"> →</span> <span class="nowrap">↓ diastolic</span> filling</span></span> and systolic <span class="nowrap">output →</span> <span class="nowrap">↓ myocardial</span> and peripheral perfusion</li>
+                        <li>
+                            <span class="highlight"><span class="highlight-step1">Obstructive type (HOCM): left ventricular outflow tract (<span class="wichtig">LVOT</span>) <span class="wichtig">obstruction</span> and mitral regurgitation due to systolic anterior movement (<span class="wichtig">SAM</span>) of the mitral valve</span></span> <span class="erklaerung">Interventricular septum hypertrophy in combination with mitral valve leaflet displacement towards the interventricular septum can cause severe subaortic obstruction.</span> <span class="highlight"><span class="highlight-step1"> <span class="erklaerung"><img src="/lyMediaAsset/get/11034" title="Hypertrophic cardiomyopathy"></span></span></span> [#13430]</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Frequently asymptomatic</li>
+                        <li>Signs of left heart failure (<span class="highlight-step1">dyspnea, <span class="wichtig"><span class="highlight">syncope</span></span></span>, dizziness)</li>
+                        <li>Arrhythmias</li>
+                        <li><span class="highlight-step1"><span class="highlight">S4 gallop</span></span></li>
+                        <li><span class="highlight"><span class="highlight-step1">Possible holosystolic murmur from mitral regurgitation</span></span></li>
+                        <li><span class="wichtig"><span class="highlight-step1"><span class="highlight">Sudden death</span></span></span></li>
+                    </ul>
+                </td>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Normal</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Significantly increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Outflow tract obstruction</span> (SAM, interventricular septum hypertrophy)</span></span></li>
+                        <li><span>Reduced diastolic filling</span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1"><span class="highlight">Second most common cardiomyopathy</span></span></li>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig"><span class="highlight-step1">Most</span> common</span> cause of sudden heart failure <span class="wichtig">in athletes</span> and teenagers</span></span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><span class="linksuggest"><span class="leitwort">Restrictive cardiomyopathy</span></span></th>
+                <td>
+                    <ul>
+                        <li><span class="highlight-step1">Mostly idiopathic</span></li>
+                        <li>Systemic disorders
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Amyloidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Sarcoidosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Hemochromatosis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Systemic sclerosis</span></span></li>
+                            </ul>
+                        </li>
+                        <li>Heart disease
+                            <ul>
+                                <li><span class="highlight"><span class="highlight-step1">Loffler endocarditis</span></span></li>
+                                <li><span class="highlight"><span class="highlight-step1">Endocardial fibroelastosis</span></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="highlight"><span class="highlight-step1">Post-radiation fibrosis</span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <span class="highlight-step1"><span class="highlight">Proliferation of connective <span class="nowrap">tissue →</span></span></span>
+                            <ul>
+                                <li><span class="highlight-step1"><span class="wichtig"><span class="nowrap">↓ Elasticity of cardiac tissue</span></span></span></li>
+                                <li>Atrial enlargement and <span class="highlight-step1"><span class="highlight">severe diastolic dysfunction</span></span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Signs of <span class="linksuggest">left heart failure</span> and <span class="linksuggest">right heart failure</span>
+                        </li>
+                    </ul>
+                </td>
+                <td style="background-color: aquamarine">
+                    <ul>
+                        <li>Decreased</li>
+                    </ul>
+                </td>
+                <td style="background-color: darksalmon">
+                    <ul>
+                        <li>Normal or increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumpurple">
+                    <ul>
+                        <li>Usually increased</li>
+                    </ul>
+                </td>
+                <td style="background-color: mediumspringgreen">
+                    <ul>
+                        <li>
+                            <span class="highlight"><span class="highlight-step1"><span class="wichtig">Dilated atria</span></span></span>, nondilated ventricles</li>
+                        <li><span class="highlight-step1"><span class="highlight"><span class="wichtig">Reduced</span> diastolic <span class="wichtig">filling</span></span></span></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Poor prognosis without heart transplant</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
