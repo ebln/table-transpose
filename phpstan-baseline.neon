@@ -1,0 +1,56 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Argument of an invalid type DOMNodeList\\<DOMNode\\>\\|false supplied for foreach, only iterables are supported\\.$#"
+			count: 2
+			path: src/Transposer.php
+
+		-
+			message: "#^Call to an undefined method DOMNode\\:\\:getAttribute\\(\\)\\.$#"
+			count: 4
+			path: src/Transposer.php
+
+		-
+			message: "#^Call to an undefined method DOMNode\\:\\:hasAttribute\\(\\)\\.$#"
+			count: 4
+			path: src/Transposer.php
+
+		-
+			message: "#^Call to an undefined method DOMNode\\:\\:removeAttribute\\(\\)\\.$#"
+			count: 2
+			path: src/Transposer.php
+
+		-
+			message: "#^Call to an undefined method DOMNode\\:\\:setAttribute\\(\\)\\.$#"
+			count: 3
+			path: src/Transposer.php
+
+		-
+			message: "#^Cannot call method createComment\\(\\) on DOMDocument\\|null\\.$#"
+			count: 1
+			path: src/Transposer.php
+
+		-
+			message: "#^Cannot call method createElement\\(\\) on DOMDocument\\|null\\.$#"
+			count: 2
+			path: src/Transposer.php
+
+		-
+			message: "#^Cannot call method removeChild\\(\\) on DOMNode\\|null\\.$#"
+			count: 4
+			path: src/Transposer.php
+
+		-
+			message: "#^Method Ebln\\\\Html\\\\TableTranspose\\\\Transposer\\:\\:transpose\\(\\) should return string\\|null but returns string\\|false\\|null\\.$#"
+			count: 1
+			path: src/Transposer.php
+
+		-
+			message: "#^Parameter \\#1 \\$document of class DOMXPath constructor expects DOMDocument, DOMDocument\\|null given\\.$#"
+			count: 1
+			path: src/Transposer.php
+
+		-
+			message: "#^Parameter \\#1 \\$node of method Ebln\\\\Html\\\\TableTranspose\\\\Transposer\\:\\:transposeTable\\(\\) expects DOMNode, DOMElement\\|null given\\.$#"
+			count: 1
+			path: src/Transposer.php

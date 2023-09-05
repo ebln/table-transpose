@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="5.15.0@5c774aca4746caf3d239d9c8cadb9f882ca29352">
+  <file src="src/Transposer.php">
+    <InvalidOperand>
+      <code>$isBodyMap[$rowNumber + $maxRowSpan - 1]</code>
+    </InvalidOperand>
+    <MixedArgument>
+      <code><![CDATA[$cell->getAttribute('scope')]]></code>
+    </MixedArgument>
+    <PossiblyFalseOperand>
+      <code>$useBody</code>
+    </PossiblyFalseOperand>
+    <PossiblyNullArgument>
+      <code><![CDATA[$node->ownerDocument]]></code>
+    </PossiblyNullArgument>
+    <PossiblyNullReference>
+      <code>removeChild</code>
+      <code>removeChild</code>
+      <code>removeChild</code>
+      <code>removeChild</code>
+    </PossiblyNullReference>
+    <RedundantCondition>
+      <code>$parent</code>
+      <code>$parent</code>
+      <code>$parent</code>
+    </RedundantCondition>
+    <UndefinedMethod>
+      <code>getAttribute</code>
+      <code>getAttribute</code>
+      <code>getAttribute</code>
+      <code>getAttribute</code>
+      <code>hasAttribute</code>
+      <code>hasAttribute</code>
+      <code>hasAttribute</code>
+      <code>hasAttribute</code>
+      <code>removeAttribute</code>
+      <code>removeAttribute</code>
+      <code>setAttribute</code>
+      <code>setAttribute</code>
+      <code>setAttribute</code>
+    </UndefinedMethod>
+  </file>
+</files>

@@ -1,8 +1,8 @@
 {
-    "name": "brnc/table-transpose",
-    "type": "library",
+    "name": "ebln/table-transpose",
     "description": "Transposes HTML tables.",
-    "license": "MIT",
+    "license": "proprietary",
+    "type": "library",
     "authors": [
         {
             "name": "ebln",
@@ -17,19 +17,24 @@
     "require-dev": {
         "ergebnis/composer-normalize": "^2.15",
         "phpmd/phpmd": "^2.10",
-        "phpstan/phpstan": "^0.12.99",
+        "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-latest",
-        "vimeo/psalm": "^4.10"
+        "vimeo/psalm": "^5.15"
     },
     "autoload": {
         "psr-4": {
-            "Brnc\\Html\\TableTranspose\\": "src/"
+            "Ebln\\Html\\TableTranspose\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Brnc\\Tests\\Html\\TableTranspose\\": "tests/"
+            "Ebln\\Tests\\Html\\TableTranspose\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
         }
     },
     "scripts": {
@@ -38,7 +43,7 @@
             "composer normalize --dry-run",
             "psalm --find-unused-psalm-suppress",
             "phpstan analyse",
-            "phpmd src,tests ansi cleancode,codesize,controversial,design,naming,unusedcode # cleancode,design",
+            "phpmd src,tests ansi unusedcode cleancode design naming",
             "@style-check",
             "@test-unit"
         ],
