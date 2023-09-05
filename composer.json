@@ -1,8 +1,8 @@
 {
-    "name": "brnc/table-transpose",
+    "name": "ebln/table-transpose",
     "type": "library",
     "description": "Transposes HTML tables.",
-    "license": "MIT",
+    "license": "proprietary",
     "authors": [
         {
             "name": "ebln",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Brnc\\Html\\TableTranspose\\": "src/"
+            "Ebln\\Html\\TableTranspose\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Brnc\\Tests\\Html\\TableTranspose\\": "tests/"
+            "Ebln\\Tests\\Html\\TableTranspose\\": "tests/"
         }
     },
     "scripts": {
@@ -45,5 +45,10 @@
         "style-check": "php-cs-fixer fix -v --config=.php-cs-fixer.dist.php --using-cache=no --dry-run",
         "style-fix": "php-cs-fixer fix -v --config=.php-cs-fixer.dist.php --using-cache=no",
         "test-unit": "phpunit --no-coverage --colors=auto"
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
     }
 }

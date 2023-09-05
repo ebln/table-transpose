@@ -2,12 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Brnc\Html\TableTranspose;
-
-use DOMDocument;
-use DOMElement;
-use DOMNode;
-use DOMXPath;
+namespace Ebln\Html\TableTranspose;
 
 class Transposer
 {
@@ -18,6 +13,7 @@ class Transposer
     {
         $htmlOutput  = null;
         $reportError = null;
+
         try {
             if (!empty($htmlTable)) {
                 $dom    = $this->createDom($htmlTable);
@@ -38,15 +34,16 @@ class Transposer
     }
 
     // TODO colgroup
-    private function transposeTable(DOMNode $node): void
+    private function transposeTable(\DOMNode $node): void
     {
         $cellCounter = 0;
         $spanCounter = 0;
 
         // gather table
-        $xpath   = new DOMXPath($node->ownerDocument);
+        $xpath   = new \DOMXPath($node->ownerDocument);
         $rowList = $xpath->query('.//tr', $node);
-        /** @var DOMElement[] $rowsToDelete */
+
+        /** @var \DOMElement[] $rowsToDelete */
         $rowsToDelete = [];
         $table        = [];
         foreach ($rowList as $rowNumber => $row) {
@@ -57,24 +54,24 @@ class Transposer
                 $rowSpan = $cell->hasAttribute('rowspan') ? (int)$cell->getAttribute('rowspan') : 1;
                 $colspan = $cell->hasAttribute('colspan') ? (int)$cell->getAttribute('colspan') : 1;
                 while (isset($table[$rowNumber]) && array_key_exists($xCoordinate, $table[$rowNumber])) {
-                    $xCoordinate++;
+                    ++$xCoordinate;
                 }
-                for ($i = 0; $i < $rowSpan; $i++) {
-                    for ($j = 0; $j < $colspan; $j++) {
+                for ($i = 0; $i < $rowSpan; ++$i) {
+                    for ($j = 0; $j < $colspan; ++$j) {
                         $table[$rowNumber + $i][$xCoordinate + $j] = null;
                     }
                 }
-                $cellCounter++;
+                ++$cellCounter;
                 $table[$rowNumber][$xCoordinate] = $cell;
                 $cell->removeAttribute('rowspan');
                 $cell->removeAttribute('colspan');
                 if ($colspan > 1) {
                     $cell->setAttribute('rowspan', (string)$colspan);
-                    $spanCounter++;
+                    ++$spanCounter;
                 }
                 if ($rowSpan > 1) {
                     $cell->setAttribute('colspan', (string)$rowSpan);
-                    $spanCounter++;
+                    ++$spanCounter;
                 }
                 if ($cell->hasAttribute('scope')) {
                     $swapScope = self::SWAP_SCOPE[strtolower($cell->getAttribute('scope'))] ?? null;
@@ -99,11 +96,12 @@ class Transposer
         foreach ($transposedTable as $rowNumber => $newRow) {
             if ($doFlushBody) {
                 $isBodyMap[$rowNumber] = true;
+
                 continue;
             }
             foreach ($newRow as $cell) {
                 if (!array_key_exists($rowNumber, $isBodyMap) || false === $isBodyMap[$rowNumber]) {
-                    $isBodyMap[$rowNumber] = null !== $cell && ($cell instanceof DOMElement && $cell->nodeName !== 'th');
+                    $isBodyMap[$rowNumber] = null !== $cell && ($cell instanceof \DOMElement && 'th' !== $cell->nodeName);
                 }
             }
             if ($isBodyMap[$rowNumber] ?? false) {
@@ -117,17 +115,18 @@ class Transposer
         $junkNodes = [];
         foreach ($rowsToDelete as $rowNumber => $row) {
             $parent = $row->parentNode;
-            /** @var DOMNode $childNode */
+
+            /** @var \DOMNode $childNode */
             foreach ($row->childNodes as $childNode) {
-                if (!in_array(strtolower($childNode->nodeName), self::TABLE_CELL)) {
-                    if (trim($childNode->textContent) !== '') {
+                if (!in_array(strtolower($childNode->nodeName), self::TABLE_CELL, true)) {
+                    if ('' !== trim($childNode->textContent)) {
                         $junkNodes[] = $childNode;
                     }
                 }
             }
             $parent->removeChild($row);
 
-            if ($parent && strtolower($parent->nodeName) === 'thead') {
+            if ($parent && 'thead' === strtolower($parent->nodeName)) {
                 if (null === $firstHead) {
                     $firstHead = $parent;
                 } elseif ($parent->parentNode && $parent->parentNode->isSameNode($firstHead)) {
@@ -135,7 +134,7 @@ class Transposer
                 }
             }
 
-            if ($parent && strtolower($parent->nodeName) === 'tbody') {
+            if ($parent && 'tbody' === strtolower($parent->nodeName)) {
                 if (null === $firstBody) {
                     $firstBody = $parent;
                 } elseif ($parent->parentNode && $parent->parentNode->isSameNode($firstBody)) {
@@ -143,7 +142,7 @@ class Transposer
                 }
             }
 
-            if ($parent && strtolower($parent->nodeName) === 'tfoot') {
+            if ($parent && 'tfoot' === strtolower($parent->nodeName)) {
                 $parent->parentNode->removeChild($parent);
             }
         }
@@ -160,7 +159,7 @@ class Transposer
             $tr = $node->ownerDocument->createElement('tr');
             foreach ($newRow as $cell) {
                 $maxRowSpan = 1;
-                if ($cell instanceof DOMNode) {
+                if ($cell instanceof \DOMNode) {
                     $tr->appendChild($cell);
                     // lookahead for rowspan number (or reverse
                     $maxRowSpan = max($maxRowSpan, $cell->hasAttribute('rowspan') ? (int)$cell->getAttribute('rowspan') : 1);
@@ -193,9 +192,9 @@ class Transposer
         }
     }
 
-    private function createDom(string $htmlTable): DOMDocument
+    private function createDom(string $htmlTable): \DOMDocument
     {
-        $dom                     = new DOMDocument('1.0', 'UTF-8');
+        $dom                     = new \DOMDocument('1.0', 'UTF-8');
         $dom->resolveExternals   = false;
         $dom->validateOnParse    = true;
         $dom->preserveWhiteSpace = false;
